@@ -76,6 +76,13 @@ $(function(){
     });
 });
 </script>
+    <script>
+      $(function(){
+        $("#flip7").click(function(){
+          $("#panel7").slideToggle("slow");
+        });
+      });
+    </script>
 <style>
 #panel, #flip {
 	margin:5px; /* margin:25px */
@@ -117,6 +124,20 @@ $(function(){
     padding: 20px;
     display: none;
 }
+</style>
+<style>
+    #panel7, #flip7 {
+        margin:5px; /* margin:25px */
+        padding:5px;
+
+        background-color: #000;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel7 {
+        padding: 20px;
+        display: none;
+    }
 </style>
 <style> 
 #panel3, #flip3 {
@@ -225,9 +246,9 @@ $(function(){
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#home">Home</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a class="page-scroll" href="#home">Home</a>-->
+                    <!--</li>-->
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
@@ -240,17 +261,17 @@ $(function(){
                     <li>
                         <a class="page-scroll" href="#speaking">Speaking</a>
                     </li>
-                    <!--<li>-->
-                        <!--<a class="page-scroll" href="#clients">Clients</a>-->
-                    <!--</li>-->
                     <li>
-                        <a class="page-scroll" href="#contact">Articles</a>
+                        <a class="page-scroll" href="#articles">Articles</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Videos</a>
+                        <a class="page-scroll" href="#videos">Videos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Blog</a>
+                        <a class="page-scroll" href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#clients">Clients</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#testimonials">Testimonials</a>
@@ -270,7 +291,7 @@ $(function(){
 
     
     
-    <header>
+    <header id="home">
         <div class="container" >
             <div class="intro-text" style="font-family: 'Roboto', sans-serif;color: black">
                 <div style="margin-bottom: 3%">
@@ -279,7 +300,7 @@ $(function(){
                 <div class="intro-lead-in">Be Seen. Be Heard. Be Sought.</div>
                 <!--<div class="intro-lead-in" style="font-size:22px; font-family: 'Open Sans', sans-serif; ">Take charge of Brand YOU.<br>If you don't brand yourself , then someone else will. </div>-->
              <!--<img class=" img-rounded img-responsive"   src="img/logomain.jpg"  height="10%" width="10%">-->
-             <a href="#home" class="page-scroll btn btn-xl">Tell Me More</a>
+             <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>    
         </div>
     </header>
@@ -543,112 +564,37 @@ $(function(){
    <!--</div>-->
  <!---->
    <!--</section>-->
-    
-    <!--<section class="bg-primary" id="resources" style="background-image: url(img//Black-Wallpaper-HD-WLI17-768x480.jpg); color:#FFF">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-lg-8 col-lg-offset-2 text-center">-->
-                    <!--<h2 class="section-heading">RESOURCES</h2>-->
-                    <!--<hr class="light">-->
-                  <!--</div>-->
-                  <!--</div>-->
-                    <!--<h3 align="center">  BLOG </h3>   -->
-                      <!--<iframe align="middle" src="https://harinichari.wordpress.com" style="border:thick" scrolling="auto" height="500px" width="1200px">-->
-                    <!--<a href="https://harinichari.wordpress.com" style="color:#F60">-->
-                    <!---->
-<!--</a></iframe>-->
-<!--&lt;!&ndash;-->
-<!--<br>-->
-<!--<br>-->
-                  <!--<h3 align="center"> ARTICLES </h3>     -->
-     <!---->
-                  <!--<a class="active" href="http://amcham.fi/6-ways-to-make-networking-work-for-you/" style="color:#F60"> http://amcham.fi/6-ways-to-make-networking-work-for-you/ </a>                <br> <br>-->
-                                  <!--<a href="http://www.pressreader.com/@Harini_Chari/2UTHT6BE6FI7" style="color:#F60">-->
-                 <!--http://www.pressreader.com/@Harini_Chari/2UTHT6BE6FI7</a>-->
 
-<!--<br>-->
-
-<!--<br>-->
-<!--<br>-->
-<!--<br>-->
-<!--<h3 align="center"> IN THE NEWS </h3>-->
-<!--<br>-->
-<!--<br>-->
-
-<!--<a href="www.facebook.com/HariniChariPersonalBrand/videos/735637709902143/" style="color:#F60">www.facebook.com/HariniChariPersonalBrand/videos/735637709902143/-->
-
-<!--</a>-->
-
-<!--<br><br>-->
-
-<!--<a class="active" href="http://www.kauppalehti.fi/uutiset/ammattilaisen-neuvot-tyonhakuun-brandaa-itsesi/UsQyxZMx" style="color:#F60">-->
-<!--http://www.kauppalehti.fi/uutiset/ammattilaisen-neuvot-tyonhakuun-brandaa-itsesi/UsQyxZMx-->
-<!--</a>-->
-
-<!--<br>-->
-<!--<br>-->
-
-<!--<a href="http://svenska.yle.fi/artikel/2013/11/20/vi-har-alla-ett-personligt-varumarke-vare-sig-vi-vill-det- -->
-
-<!--eller-ejenska.yle.fi/artikel/" style="color:#F60">-->
-<!--http://svenska.yle.fi/artikel/2013/11/20/vi-har-alla-ett-personligt-varumarke-vare-sig-vi-vill-det- -->
-
-<!--eller-ejenska.yle.fi/artikel/-->
-<!--</a>-->
-
-<!--<br><br>-->
-
-<!--<a href="https://twitter.com/amchamwatch/status/403178674507087873013/" style="color:#F60">-->
-<!--https://twitter.com/amchamwatch/status/403178674507087873013/-->
-<!--</a>-->
-
-<!--<br><br>-->
-
-<!--<a href="http://www.pressen.se/om/Harini+Chari/" style="color:#F60">http://www.pressen.se/om/Harini+Chari/-->
-<!--</a>-->
-
-<!--<br>-->
-<!--<br>-->
-                <!---->
- <!--&ndash;&gt;-->
-<!--</div>-->
-    <!--</section>   -->
-  
- 
     <!-- Speaking Section -->
-    <section id="speaking" style="background-image: url(img//white_wallpaper_by_surturdesign-d6dvo7v.png);color:#000">
-        <div class="container">
+    <section id="speaking" style="background-color: white;color:#000">
+        <div class="container" style="font-family: 'Roboto', sans-serif;">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" style="font-family: 'Roboto', sans-serif;">
                     <h2 class="section-heading" style="color:#000">SPEAKING</h2>
                     <div class="img-responsive" align="center">
                     <h1 align="centre"> <img class="img-responsive" src="img/speaking/Speaking.jpg" height="500" width="500"></h1>
                          </div>               
                          <br>
                          <br>
+                    <p style="color:#000; font-size: large">
+                        Harini Chari has engaged and energized audiences all the way from the LinkedIn headquarters in Asia to INSEAD. She speaks on Personal and Leadership Branding, Thought Diversity and Bringing The Whole self To Work, Professional Reinvention, Intentional Networking, and Thought Leadership on Social Media.
+                        Known for her inspiring and insightful sessions, Harini effectively empowers her audience to stay relevant and crate impact for themselves and others.
+                    </p>
                     <h1 class="section-subheading text-muted" style="color:#000">WHAT GOES INTO HARINI'S KEY SPEECH TOPICS </br></h1><br><br>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-3">
-                    <img src="img/the-power-of-branding.jpg" height="150" width="200" class="img-responsive" alt="" >
+                <div class="col-md-4">
+                    <img src="img/the-power-of-branding.jpg" style="height: 200px; width: 400px" class="img-responsive" alt="" >
                                         <h4 class="service-heading">THE BRAND CALLED YOU</h4>
                                         <div id="flip3" style="color:#FFF"> READ MORE ... </div>  
                     
-                    <div id="panel3" align="left" class="text-muted" style="color:#FFF">Why do we remember and seek certain brands over a sea of products? How to cut the clutter and
-
-ensure a positive impact on others? Are you perceived the way you want to be? Discover your 
-
-strengths and what makes you uniquely you. There was a time when success was defined by 
-
-intelligence quotient and then by emotional quotient. Today IQ and EQ are enhanced by our 
-
-Reputation Quotient. It is our RQ that helps highlight and differentiate our IQ and EQ. How you can 
-
-effectively use Personal Branding to harness the power of your RQ.</div>
+                    <div id="panel3" align="left" class="text-muted" style="color:#FFF">For sustained career success, shaping your personal brand + corporate etiquette + professional image is crucial. Today, customers first buy into the person before they buy into the product you are selling.
+                        So, how you present yourself, how you communicate, how you stay memorable are all critical elements of the brand experience you offer your prospective customer/client.
+                        By taking charge of the overall brand experience, you will be inspired and equipped to create both, personal empowerment and corporate excellence..</div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img//12.jpg" class="img-responsive" height="1000" width="400" alt="">
+                <div class="col-md-4" style="margin-bottom: 2%">
+                    <img src="img/12.jpg" class="img-responsive" style="height: 200px; width: 400px" alt="">
                     <h4 class="service-heading">THOUGHT LEADERSHIP</h4>
                                         <div id="flip4" style="color:#FFF"> READ MORE ... </div>  
                     
@@ -663,8 +609,8 @@ resume. Be the expert. Own that space. Attract the right people and opportunitie
 
 your life.</div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img//TN02-Blog-banner.png" class="img-responsive" height="200" width="200" alt="">
+                <div class="col-md-4">
+                    <img src="img//TN02-Blog-banner.png" class="img-responsive" style="height: 200px; width: 400px" alt="">
                     <h4 class="service-heading">THE ART OF BRAND STORY-TELLING</h4>
                                         <div id="flip5" style="color:#FFF"> READ MORE ... </div>  
                     
@@ -676,13 +622,22 @@ transparent enough in your business dealings and conversations and yet emotional
 
 your audience? What does it take to emotionally connect and how can one do it?</div>
                 </div>
-                 <div class="row text-center">
-                <div class="col-md-3">
-                    <img src="img//your_net_worth_your_network_shirt-r36298c26285f49b18d83bf59b7e31a98_jooai_1024.jpg" height="180" width="180" class="img-responsive" alt="" >
-                                        <h4 class="service-heading">NETWORK = YOUR NET WORTH</h4>
-                                        <div id="flip6" style="color:#FFF"> READ MORE ... </div>  
-                    
-                    <div id="panel6" align="left" class="text-muted" style="color:#FFF">Gone are the days of collecting hundreds of business cards and sending out random 
+            </div>
+            <div class="row text-center" style="font-family: 'Roboto', sans-serif;margin-top: 5%;">
+                <div class="col-md-4" >
+                    <img src="img/leadership_branding.jpg" class="img-responsive" style="height: 200px; width: 400px; border: 1px solid black" alt="">
+                    <h4 class="service-heading">Leadership Branding- Elevate Your Influence</h4>
+                    <div id="flip7" style="color:#FFF"> READ MORE ... </div>
+
+                    <div id="panel7" align="left" class="text-muted" style="color:white">
+                        Leadership branding is a lot about discovering your authentic self, harnessing the passions that drive you and embracing the values that you live by.  Your leadership brand is also how your audience views you. Once people recognize who you are, know what you stand for and associate you with a specific area of expertise, they seek you. By building, aligning and taking charge of your leadership brand, you attract the right opportunities and make an impactful presence that reflects your values, passions and goals on paper, online and in person.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img//your_net_worth_your_network_shirt-r36298c26285f49b18d83bf59b7e31a98_jooai_1024.jpg" style="height: 200px; width: 400px" class="img-responsive" alt="" >
+                    <h4 class="service-heading">NETWORK = YOUR NET WORTH</h4>
+                    <div id="flip6" style="color:#FFF"> READ MORE ... </div>
+                    <div id="panel6" align="left" class="text-muted" style="color:#FFF">Gone are the days of collecting hundreds of business cards and sending out random
 
 LinkedIn invites. Aimless networking doesn’t get you where you want. Debunk the 
 
@@ -690,286 +645,305 @@ networking myths and get cracking on - How to continue the conversation? How to 
 
 value? How to build trust?</div>
                 </div>
-                
-                </div>
-                <br>
-                <br>
+            </div>
+            <br>
+            <div class="row">
                 <h2 class="service-heading" align="center"> 3 STEP PROCESS </h2> 
-
-<div class="col-md-4">
-                    <span class="fa-stack fa-4x" style="font-family:'Comic Sans MS', cursive; font-size:medium">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x" style="font-family: 'Roboto', sans-serif; font-size:medium">
                     </span>
                     <h4 class="service-heading">REFLECT</h4>
 
-<p style="font-family:'Comic Sans MS', cursive; font-size:medium">Unearth true purpose and understand what drives and guides you. Your values, passions,
+<p style="font-size:medium">Unearth true purpose and understand what drives and guides you. Your values, passions,
 
 goals and mission in life will be fleshed out through which hidden potential and career leanings are 
 
 figured out.</p>
 </div>
-                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x" style="font-family:'Comic Sans MS', cursive; font-size:medium">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x" style="font-family: 'Roboto', sans-serif; font-size:medium">
                     </span>
                     <h4 class="service-heading">REVEAL</h4>
-                    <p style="color:#000;font-family:'Comic Sans MS', cursive; font-size:medium">With a clear idea of who you are, embark on sharing your true purpose with your audience
+                    <p style="color:#000;font-size:medium">With a clear idea of who you are, embark on sharing your true purpose with your audience
 
 through a stand-out brand narrative, brand statement and network. Make it clear as to why your 
 
 audience/employer/client should care about you and choose you over a million others.</p>
                 </div>
-                
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x" style="font-family:'Comic Sans MS', cursive; font-size:medium">
+                    <span class="fa-stack fa-4x" style="font-family: 'Roboto', sans-serif; font-size:medium">
                     </span>
                     <h4 class="service-heading">RADIATE</h4>
-                    <p style="color:#000; font-family:'Comic Sans MS', cursive; font-size:medium" >It’s one thing to claim and quite another to do. Keeping the brand alive and fresh happens
+                    <p style="color:#000; font-size:medium" >It’s one thing to claim and quite another to do. Keeping the brand alive and fresh happens
 
 only when we walk the talk and demonstrate. Ideas and proven approaches to continue shining as YOU.</p>
                 </div>
-</div>
+            </div>
+            <!--<div class="row" style="margin-top: 5%; font-family: 'Roboto', sans-serif;">-->
+                <!--<div>-->
+                    <!--<h3 class="text-center">Leadership Branding- Elevate Your Influence</h3>-->
+                    <!--<p>Leadership branding is a lot about discovering your authentic self, harnessing the passions that drive you and embracing the values that you live by.  Your leadership brand is also how your audience views you. Once people recognize who you are, know what you stand for and associate you with a specific area of expertise, they seek you. By building, aligning and taking charge of your leadership brand, you attract the right opportunities and make an impactful presence that reflects your values, passions and goals on paper, online and in person.</p>-->
+                <!--</div>-->
+                <!--<div style="margin-top: 5%">-->
+                    <!--<h3 class="text-center">Thought Diversity- Bring Your Whole Self to Work</h3>-->
+
+                    <!--<h4 class="text-center">The Brand Called YOU</h4>-->
+                    <!--<p>-->
+                        <!--For sustained career success, shaping your personal brand + corporate etiquette + professional image is crucial. Today, customers first buy into the person before they buy into the product you are selling.-->
+                        <!--So, how you present yourself, how you communicate, how you stay memorable are all critical elements of the brand experience you offer your prospective customer/client.-->
+                        <!--By taking charge of the overall brand experience, you will be inspired and equipped to create both, personal empowerment and corporate excellence.-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
-   <br>
-   <br>
-   
-<h3 align="center"> SPEAKING VIDEOS</h3>
-<div align="center">
-    <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/rKKyNsudEEM">
-    </iframe>
-   </div>
-   
     </section>
 
+    <!-- Articles Section -->
+    <section class="bg-primary" id="articles" style="background-color: black; color:#FFF">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 align="center"> ARTICLES </h3>
+
+                    <a class="active" href="http://amcham.fi/6-ways-to-make-networking-work-for-you/" style="color:#F60"> 6 ways to make networking work for you. </a>
+                    <br>
+                    <br>
+                    <a href="http://www.pressreader.com/@Harini_Chari/2UTHT6BE6FI7" style="color:#F60">
+                        Press Reader Article.</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <!--<h3 align="center"> IN THE NEWS </h3>-->
+                    <!--<br>-->
+                    <!--<br>-->
+
+                    <!--<a href="www.facebook.com/HariniChariPersonalBrand/videos/735637709902143/" style="color:#F60">www.facebook.com/HariniChariPersonalBrand/videos/735637709902143/-->
+
+                    <!--</a>-->
+
+                    <!--<br><br>-->
+
+                    <!--<a class="active" href="http://www.kauppalehti.fi/uutiset/ammattilaisen-neuvot-tyonhakuun-brandaa-itsesi/UsQyxZMx" style="color:#F60">-->
+                        <!--http://www.kauppalehti.fi/uutiset/ammattilaisen-neuvot-tyonhakuun-brandaa-itsesi/UsQyxZMx-->
+                    <!--</a>-->
+
+                    <!--<br>-->
+                    <!--<br>-->
+
+                    <!--<a href="http://svenska.yle.fi/artikel/2013/11/20/vi-har-alla-ett-personligt-varumarke-vare-sig-vi-vill-det- -->
+<!--eller-ejenska.yle.fi/artikel/" style="color:#F60">-->
+                        <!--http://svenska.yle.fi/artikel/2013/11/20/vi-har-alla-ett-personligt-varumarke-vare-sig-vi-vill-det- -->
+
+                        <!--eller-ejenska.yle.fi/artikel/-->
+                    <!--</a>-->
+
+                    <!--<br><br>-->
+
+                    <!--<a href="https://twitter.com/amchamwatch/status/403178674507087873013/" style="color:#F60">-->
+                        <!--https://twitter.com/amchamwatch/status/403178674507087873013/-->
+                    <!--</a>-->
+
+                    <!--<br><br>-->
+
+                    <!--<a href="http://www.pressen.se/om/Harini+Chari/" style="color:#F60">http://www.pressen.se/om/Harini+Chari/-->
+                    <!--</a>-->
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="bg-primary" id="videos" style="background-color: white; color: black">
+        <div class="container" style="font-family: 'Roboto', sans-serif;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading" style="color: black">VIDEOS</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <div align="center">
+                <h3 class="section-heading" style="color: black">IoT for Health</h3>
+                <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/rKKyNsudEEM">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="bg-primary" id="blog" style="background-color: black; color:white">
+        <div class="container" style="font-family: 'Roboto', sans-serif;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading" style="color: white">BLOG</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <iframe align="middle" src="https://harinichari.wordpress.com" style="border:thick; border: 1px solid black" scrolling="auto" height="600px" width="1200px">
+                <a href="https://harinichari.wordpress.com" style="color:#F60">
+
+                </a></iframe>
+
+            <br>
+            <br>
+        </div>
+    </section>
 
     <!-- Client Section -->
-    <section id="clients" class="bg-light-gray" style="background-image:url(img//Black-Wallpaper-HD-WLI17-768x480.jpg)">
-          <h3 class="service-heading" align="center" style="color:#FFF"> CLIENTS</h3>
+    <section id="clients" class="bg-light-gray" style="background-color: white">
+        <h3 class="service-heading" align="center" style="color:black"> CLIENTS</h3>
 
-    <!-- Clients Logos -->
-    
-    <aside class="clients">
-        <div class="container">
-            
-            
-            <div class="row">
-              
-              
-             <div class="col-md-3">
-             <a href="#">
-                        <img src="img/logos/5fhfNYWv.jpg" class="img-responsive img-centered" width="100" height="100" alt="">
-                    </a> 
-                             </div>
-               <div class="col-md-3">
-                                   <a href="#">
-                        <img src="img/logos/8af5130b8fd4b90e-fea9e.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-               
+        <!-- Clients Logos -->
+        <aside class="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/5fhfNYWv.jpg" class="img-responsive img-centered" width="100" height="100" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/8af5130b8fd4b90e-fea9e.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/220px-Mediacorp_vasantham_central_logo.png" class="img-responsive img-centered" width="400" height="400" alt="">
+                        </a></div>
+                     <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/2000px-SVT1_logo_2012.svg.png" class="img-responsive img-centered" width="100" height="100" alt="">
+                        </a>
+                    </div>
                 </div>
-                 <div class="col-md-3">
-
-                
-                
-                  <a href="#">
-                        <img src="img/logos/220px-Mediacorp_vasantham_central_logo.png" class="img-responsive img-centered" width="400" height="400" alt="">
-                    </a></div>
-                              
-                 <div class="col-md-3">
-
-                
-                
-                    <a href="#">
-                        <img src="img/logos/2000px-SVT1_logo_2012.svg.png" class="img-responsive img-centered" width="100" height="100" alt="">
-                    </a>
-    </div>
-    </div>
-    
-    <div class="row">
-   <div class="col-md-3">
-
-                            
-                    <a href="#">
-                        <img src="img/logos/11045529_10153113032798459_865353687_o_0.jpg" class="img-responsive img-centered" width="100" height="100"alt="">
-                    </a>
-  
-</div>  
-       <div class="col-md-3">
-
-            
-                
-                    <a href="#">
-                        <img src="img/logos/AIESEC-logo.png" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-  
-  </div>
-   <div class="col-md-3">
-
-             
-                
-                    <a href="#">
-                        <img src="img/logos/AmCham_RedLion-croppedt.jpg" class="img-responsive img-centered" width="100" height="100"alt="">
-                    </a>
-</div>         <div class="col-md-3">
-
-            
-                
-                    <a href="#">
-                        <img src="img/logos/coverimage_1509043470857_banner-kpi-networking-no-sponsors-960-260.jpg" width="200" height="200" class="img-responsive img-centered" alt="">
-                    </a>
-  
-  </div>
-  </div>
-  <div class="row">
-   <div class="col-md-3">
-
-            
-                
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/11045529_10153113032798459_865353687_o_0.jpg" class="img-responsive img-centered" width="100" height="100"alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                                <img src="img/logos/AIESEC-logo.png" class="img-responsive img-centered" width="200" height="200" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                                <img src="img/logos/AmCham_RedLion-croppedt.jpg" class="img-responsive img-centered" width="100" height="100"alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/coverimage_1509043470857_banner-kpi-networking-no-sponsors-960-260.jpg" width="200" height="200" class="img-responsive img-centered" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3">
                     <a href="#">
                         <img src="img/logos/EDM-Masthead-(Women-&-Leadership-Programme)_0.jpg" class="img-responsive img-centered"width="200" height="200" alt="">
                     </a>
-  
-  </div>
-
- <div class="col-md-3">
-                             
+                </div>
+                <div class="col-md-3">
                     <a href="#">
                         <img src="img/logos/fbc_logo.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
                     </a>
-  
-</div>  
-       <div class="col-md-3">
-       
-                
-                    <a href="#">
-                        <img src="img/logos/headerphoto_over.png" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-  
-  </div>
-
- <div class="col-md-3">
-           
-                
-                    <a href="#">
+                </div>
+                <div class="col-md-3">
+                   <a href="#">
+                            <img src="img/logos/headerphoto_over.png" class="img-responsive img-centered" width="200" height="200" alt="">
+                   </a>
+                </div>
+                <div class="col-md-3">
+                   <a href="#">
                         <img src="img/logos/kgzujrym.jpg" class="img-responsive img-centered" width="100" height="100" alt="">
-                    </a>
-  
-  </div>
-  </div>
-  <div class="row">
-
- <div class="col-md-3">
-        
-                
+                   </a>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-3">
                     <a href="#">
                         <img style="background:#FFF" src="img/logos/logo.png" class="img-responsive img-centered" width="200" height="200" alt="">
                     </a>
-  
-  </div>
- <div class="col-md-3">
-                           
+                </div>
+                <div class="col-md-3">
                     <a href="#">
                         <img style="background:#FFF" src="img/logos/logo_amway_en.png" class="img-responsive img-centered" width="200" height="200" alt="">
                     </a>
-  
-  </div>
-
- <div class="col-md-3">
-                             
+                </div>
+                <div class="col-md-3">
                     <a href="#">
                         <img src="img/logos/LogoHelsinki.jpg" class="img-responsive img-centered" width="100" height="100" alt="">
                     </a>
-  
-  </div>
-
- <div class="col-md-3">
-             
-                
+                </div>
+                <div class="col-md-3">
                     <a href="#">
                         <img src="img/logos/logo-vertical_en.png" class="img-responsive img-centered" width="100" height="100" alt="">
                     </a>
-  
-  </div>
-  </aside>
-  <br>
-  
-<div class="row">
-      
-       <div class="col-md-3">
-                    
-                    <a href="#">
-                        <img src="img/logos/SIM_Group_logo.svg.png" class="img-responsive img-centered" width="100" height="100" alt="">
-                    </a>
-  
-  </div>
- <div class="col-md-3">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/SIM_Group_logo.svg.png" class="img-responsive img-centered" width="100" height="100" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img style="background:#FFF" src="img/logos/startup-academy-dragon-law-dl.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/Swiss_Re.svg.png" class="img-responsive img-centered" width="200" height="200" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="img/logos/wda.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
 
-                         
-                    <a href="#">
-                        <img style="background:#FFF" src="img/logos/startup-academy-dragon-law-dl.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-  
-  </div>
-
- <div class="col-md-3">
-
-         
-                
-                    <a href="#">
-                        <img src="img/logos/Swiss_Re.svg.png" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-  
-  </div>
-
-
- <div class="col-md-3">
-            
-                
-                    <a href="#">
-                        <img src="img/logos/wda.jpg" class="img-responsive img-centered" width="200" height="200" alt="">
-                    </a>
-  
-  </div>
-
-
-  </div>
-   </section> 
-   </aside>
-     </div>
-   
-   <section id="testimonials" style="background-image: url(img//white_wallpaper_by_surturdesign-d6dvo7v.png)  ; color:#000">
+   <section id="testimonials" style="background-color: black; color:white">
         <div class="container">
-      
-
-            <div class="intro-text">
-            
+            <div class="intro-text" style="color: #d5d5d5">
               <h2 class="section-heading" align = "center"> TESTIMONIALS </h2>
 <br>      
                 <h3 align="center"> What My Clients Say ?</h3>               
-                    <div class="timeline-image">
-                        <img align="center" class="img-circle img-responsive" src="img/amway.png" alt="" height="140" width="150">
+                <div class="timeline-image">
+                    <img align="center" class="img-circle img-responsive" src="img/amway.png" alt="" height="140" width="150">
+                </div>
+                <div class=" timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="subheading">Mette Bettina Henius, Senior Corporate Affairs Manager - Amway Scandinavia</h4>
                     </div>
-                    <div class=" timeline-panel">
-                        <div class="timeline-heading"> 
-                            <h4 class="subheading">Mette Bettina Henius, Senior Corporate Affairs Manager - Amway Scandinavia</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted" style="color:#000"><b>"</b>Harini is THE personal branding expert. I have worked several times with Harini and she is
-                            always very professional giving high value to events such as a key note speaker at AmCham 
-                            Finland's Womens Network events, of which some of them were sponsored by Amway. In 
-                            addition, Harini has bought in value to managers in Amway Scandinavia in regards to personal 
-                            branding.<b>”</b>
-                            </p>
-                        </div>
+                    <div class="timeline-body">
+                        <p class="text-muted"><b>"</b>Harini is THE personal branding expert. I have worked several times with Harini and she is
+                        always very professional giving high value to events such as a key note speaker at AmCham
+                        Finland's Womens Network events, of which some of them were sponsored by Amway. In
+                        addition, Harini has bought in value to managers in Amway Scandinavia in regards to personal
+                        branding.<b>”</b>
+                        </p>
                     </div>
-                    </li>               
-                    <div class="timeline-image">
-                        <img align="center" class="img-circle img-responsive" src="img/logo_color-300x300.png" height="150" width="140" alt="">
+                </div>
+                <div class="timeline-image">
+                    <img align="center" class="img-circle img-responsive" src="img/logo_color-300x300.png" height="150" width="140" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="">
+                       <h4 class="subheading">Kristiina Helenius, CEO, Amcham Finland</h4>
                     </div>
-                    <div class="timeline-panel">
-                        <div class="">
-                           <h4 class="subheading">Kristiina Helenius, CEO, Amcham Finland</h4>
-                        </div>
-                        <div class="timeline-body">
-                        <p class="text-muted" style="color:#000"><b>”</b>Harini has a strong impact on others. I got to witness it at close range when she worked at 
+                    <div class="timeline-body">
+                    <p class="text-muted"><b>”</b>Harini has a strong impact on others. I got to witness it at close range when she worked at
 
 Amcham Finland. People were transformed as she guided them to discover the extraordinary in 
 
@@ -990,17 +964,17 @@ We were heart-broken when Harini had to return to Singapore but we continue to w
 her and hope for her return. One clock on the office wall is set on Singapore time to keep us 
 
 synced! I recommend Harini highly.<b>”</b></p>
-                        </div>
                     </div>
-                        <div class="timeline-image">
-                                <img align="center" class="img-circle img-responsive" src="img/Metropolia-Logo.png" height="160" width="150" alt="">
+                </div>
+                <div class="timeline-image">
+                            <img align="center" class="img-circle img-responsive" src="img/Metropolia-Logo.png" height="160" width="150" alt="">
+                    </div>
+                <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Louise Stansfield, Senior Lecturer, Metropolia Business School, Finland</h4>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">Louise Stansfield, Senior Lecturer, Metropolia Business School, Finland</h4>
-                            </div>
-                            <div class="timeline-body">
-                                    <p class="text-muted" style="color:#000"><b>”</b>Ms Chari gave an inspiring guest lecture on Personal Branding to our students at an alumni 
+                        <div class="timeline-body">
+                                <p class="text-muted"><b>”</b>Ms Chari gave an inspiring guest lecture on Personal Branding to our students at an alumni
 
 event held in Metropolia Business School in October 2013. Students found this to be a highly 
 
@@ -1013,32 +987,32 @@ presentation style and several have asked me to invite her back in future. I can
 wholeheartedly recommend Ms Chari as a Personal Branding Speaker who will give your 
 
 audience value and make an impact.<b>”</b></p>
-                                </div>
                             </div>
-                            <div class="timeline-image">
-                                <img align="center" class="img-circle img-responsive" src="img/Swiss_Re.svg.png" height="260" width="250" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                  
-                                    <h4 class="subheading">Swiss Reinsurance, Singapore</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted" style="color:#000"><b>”</b>The energy and passion  of the presenter for the topic was very visible. The session was a 
+                        </div>
+                <div class="timeline-image">
+                            <img align="center" class="img-circle img-responsive" src="img/Swiss_Re.svg.png" height="260" width="250" alt="">
+                        </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Swiss Reinsurance, Singapore</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted"><b>”</b>The energy and passion  of the presenter for the topic was very visible. The session was a
 
 comprehensive and a high quality engagement experience.<b>”</b></p>
-                                </div>
-                            </div>
-                            <div class="timeline-image">
-                                <img align="center" class="img-circle img-responsive" src="img/213ab21.png" height="260" width="250" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                  
-                                    <h4 class="subheading">Sean Lau,  Key Person Of Influence- Entrevo</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted" style="color:#000"><b>”</b>Harini is an amazing event speaker. She was great to work with from the get go, from deciding
+                    </div>
+                </div>
+                <div class="timeline-image">
+                    <img align="center" class="img-circle img-responsive" src="img/213ab21.png" height="260" width="250" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+
+                        <h4 class="subheading">Sean Lau,  Key Person Of Influence- Entrevo</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-muted" ><b>”</b>Harini is an amazing event speaker. She was great to work with from the get go, from deciding
 
 her topics to following up with details and content, being very professional throughout the 
 
@@ -1047,18 +1021,18 @@ process. At the event, she delivered a very engaging talk tailored for the audie
 great knowledge of her expertise. I would recommend Harini as an authority in the personal 
 
 branding space.<b>”</b></p>
-                                </div>
-                            </div>
-                            <div class="timeline-image">
-                                <img align="center" class="img-circle img-responsive" src="img/__5872700_orig.png" height="260" width="250" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                  
-                                    <h4 class="subheading">Simone Romeo, National Director of Human Resources at AIESEC in Iran</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted" style="color:#000"><b>”</b>Harini introduced me to the charming realms of personal branding. AIESEC Helsingin yliopisto 
+                    </div>
+                </div>
+                <div class="timeline-image">
+                    <img align="center" class="img-circle img-responsive" src="img/__5872700_orig.png" height="260" width="250" alt="">
+                </div>
+                <div class="timeline-panel">
+                        <div class="timeline-heading">
+
+                            <h4 class="subheading">Simone Romeo, National Director of Human Resources at AIESEC in Iran</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" ><b>”</b>Harini introduced me to the charming realms of personal branding. AIESEC Helsingin yliopisto
 
 invited her to hold a workshop about personal branding in the spring 2013 and again in 
 
@@ -1067,14 +1041,13 @@ autumn. She could easily grab the attention of her audience with her calm and we
 words. People would listen to her like three-year olds, completely captivated and the feedback 
 
 was excellent. As Vice-President of AIESEC Helsingin yliopisto I was proud to have her with us.<b>”</b></p>
-                                </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                <div class="timeline-image">
                             </div>
-                        
-                        <br>
-                        <br>
-                          <div class="timeline-image">
-                            </div>
-                            <div class="timeline-panel">
+                <div class="timeline-panel">
                                 <div class="timeline-heading">
                                   
                                     <h4 class="subheading">Lea Kivela-Pelkonen, Finland for Travel & 
@@ -1082,7 +1055,7 @@ was excellent. As Vice-President of AIESEC Helsingin yliopisto I was proud to ha
 Tourism Industry</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted" style="color:#000"><b>”</b>Harini is a goal-oriented, dedicated professional with whom it is a true joy and pleasure to co-
+                                    <p class="text-muted"><b>”</b>Harini is a goal-oriented, dedicated professional with whom it is a true joy and pleasure to co-
 
 operate. She has excellent communication & presentation skills and is an expert in Personal 
 
@@ -1095,15 +1068,9 @@ and joyful personality make her an excellent member of any team. I can warmly re
 to any demanding position or project she feels passionate about.<b>”</b></p>
                                 </div>
                             </div>
-                       
- 
-                          </ul>
-                </div>
- </div>
-         
             </div>
         </div>
-        </section>
+    </section>
     <!--/header-->
 
     <!-- Contact Section -->
@@ -1126,19 +1093,17 @@ to any demanding position or project she feels passionate about.<b>”</b></p>
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-        <div class="container">
+        <div class="container" style="font-family: 'Roboto', sans-serif;">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact </h2>
                     <br>
                     <br>
                     <br>
-                    <h2 align="center">
-                  
 <br>
 <br>
 <br>
-                    <h3 class="section-subheading text-muted" style="color:#F60"><b>I WOULD LOVE TO HEAR FROM YOU!!!!</b></h3>
+                    <h3 class="section-subheading text-muted" style="font-family: 'Roboto', sans-serif;color:#F60"><b>I WOULD LOVE TO HEAR FROM YOU.</b></h3>
                 </div>
             </div>
             <div class="row">
@@ -1181,7 +1146,7 @@ to any demanding position or project she feels passionate about.<b>”</b></p>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy;ABSOLUTES</span>
+                    <span class="copyright">Made with <span style="color: red">&hearts;</span> by &copy;ABSOLUTES</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
